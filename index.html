@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>ITC SaaS Assignment</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="navbar-brand">
+                <p class="brand active">SaaS Kit</p>
+            </div>
+            <hr>
+            <nav class="navbar"> 
+                <div class="profile">
+                    <img src="./images/profile_picture.png" alt="" id="profile-picture">
+                    <div class="right-profile">
+                        <div>Sierra Ferguson</div>
+                        <div id="email">s.ferguson@gmail.com</div>
+                    </div>
+                </div>
+                <div class="navbar-nav">
+                    <div class="nav-item"><img src="./images/dashboard_logo.png" alt=""><span class="nav-link active">Dashboard</span></div>
+                    <div class="nav-item"><img src="./images/tasks.png" alt=""><span class="nav-link">Tasks</span></div>              
+                    <div class="nav-item"><img src="./images/email.png" alt=""><span class="nav-link">Email</span></div>   
+                    <div class="nav-item"><img src="./images/contacts.png" alt=""><span class="nav-link">Contacts</span></div>   
+                    <div class="nav-item"><img src="./images/chat.png" alt=""><span class="nav-link">Chat</span></div>   
+                    <div class="nav-item"><img src="./images/deals.png" alt=""><span class="nav-link">Deals</span></div>                      
+                    <hr id="nav-hr">
+                    <div class="nav-item"><img src="./images/settings.png" alt=""><span class="nav-link">Settings</span></div>
+                </div>
+            </nav>
+            <div class="toggle"><img src="./images/toggle.png" alt=""><span class="toggle-text">Toggle sidebar</span></div>
+        </div>
+        <div class="right-child">
+            <div class="search-bar">
+                <img style="padding-left: 36px;" src="./images/search_icon.png" alt="">
+                <input class="search-input" type="text" placeholder="Global search">
+                <img style="padding-right: 18px; margin-left: auto;" src="./images/notifications.png" alt="">
+            </div>
+            
+            <div class="content">
+                <div class="tasks-container">
+                    <div class="box">
+                        <div class="tasks-content">
+                            <div class="progress">
+                                <h4>8 task completed out of 10</h4>
+                                <p style="font-size: 12px; margin-left: auto; color: #6A707E;">Show: <a style="font-size: 12px;" class="active" href="#">This week</a></p>
+                                <img style="padding-left: 6px;" src="./images/dropdown_logo_tasks.png" alt="">
+                            </div>
+                            <div class="progress-bar">
+                                <div id="progress-bar-full"></div>
+                                <div id="progress-bar-green"></div>
+                            </div>
+                            <div class="date">
+                                <h3>23 December, Sunday</h3>
+                            </div>
+                            <div class="tasks-calendar">
+                                <div class="calendar-date-container">
+                                    <div class="calendar-date-dow">
+                                        Sun
+                                    </div>
+                                    <div class="calendar-selected-day">23</div>
+                                </div>
+                                <div class="calendar-date-container">
+                                    <div class="calendar-date-dow-current">
+                                        Mon
+                                    </div>
+                                    <div class="calendar-date-day-current">24</div>
+                                </div>
+                                <div class="calendar-date-container">
+                                    <div class="calendar-date-dow">
+                                        Tue
+                                    </div>
+                                    <div class="calendar-date-day">25</div>
+                                </div>
+                                <div class="calendar-date-container">
+                                    <div class="calendar-date-dow">
+                                        Wed
+                                    </div>
+                                    <div class="calendar-date-day">26</div>
+                                </div>
+                                <div class="calendar-date-container">
+                                    <div class="calendar-date-dow">
+                                        Thu
+                                    </div>
+                                    <div class="calendar-date-day">28</div>
+                                </div>
+                                <div class="calendar-date-container">
+                                    <div class="calendar-date-dow">
+                                        Fri
+                                    </div>
+                                    <div class="calendar-date-day">29</div>
+                                </div>
+                                <div class="calendar-date-container">
+                                    <div class="calendar-date-dow">
+                                        Sat
+                                    </div>
+                                    <div class="calendar-date-day">30</div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="tasks-box-container">
+                            <div  class="tasks-box">
+                                <div class="tasks-box-title">
+                                    <h3>Send benefit review by...</h3>
+                                    <p style="font-size: 12px; margin-left: auto; color: #90A0B7">Reminder</p>
+                                </div>
+                                <div class="tasks-box-due-date">
+                                    <span id="due-date-label">Due Date: </span>
+                                    <span id="due-date">December 23, 2018</span>
+                                </div>
+                                <div class="tasks-box-bottom-row">
+                                    <img src="./images/tasks_box_image_1.png" alt="">
+                                    <p>George Fields</p>
+                                    <div class="tasks-box-bottom-row-status">
+                                        <div class="tasks-box-bottom-row-status-completed">
+                                            Completed
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="tasks-box">
+                                <div class="tasks-box-title">
+                                    <h3>Invite to office meet-up</h3>
+                                    <p style="font-size: 12px; margin-left: auto; color: #90A0B7">Call</p>
+                                </div>
+                                <div class="tasks-box-due-date">
+                                    <span id="due-date-label">Due Date: </span>
+                                    <span id="due-date">December 23, 2018</span>
+                                </div>
+                                <div class="tasks-box-bottom-row">
+                                    <img src="./images/tasks_box_image_2.png" alt="">
+                                    <p>Rebecca Moore</p>
+                                    
+                                    <div class="tasks-box-bottom-row-status">
+                                        <img src="./images/edit_icon.png" alt="">
+                                        <img src="./images/delete_icon.png" alt="">
+                                        <div class="tasks-box-bottom-row-status-ended">
+                                            Ended
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="tasks-box last-box">
+                                <div class="tasks-box-title">
+                                    <h3>Office meet-up</h3>
+                                    <p style="font-size: 12px; margin-left: auto; color: #90A0B7">Event</p>
+                                </div>
+                                <div class="tasks-box-due-date">
+                                    <span id="due-date-label">Due Date: </span>
+                                    <span id="due-date">December 23, 2018</span>
+                                </div>
+                                <div class="tasks-box-bottom-row">
+                                    <img src="./images/tasks_box_image_3.png" alt="">
+                                    <p>Lindsey Stroud</p>
+                                    <div class="tasks-box-bottom-row-status">
+                                        <div class="tasks-box-bottom-row-status-completed">
+                                            <div>Completed</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="show-more">
+                                Show more
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="right-content">
+                    <div class="charts-container">
+                        <div class="deals-container">
+                            <div class="box">
+                                <div class="deals-content">
+                                    <div class="chart-header">
+                                        <h3 id="deals-title">Deals</h3>
+                                        <p style="font-size: 12px; margin-left: auto; color: #6A707E;">Show: <a style="font-size: 12px;" class="active" href="#">Monthly</a></p>
+                                        <img style="padding-left: 5px;" src="./images/dropdown_logo_tasks.png" alt="">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="deals-content">
+                                    <div class="closed-deals">
+                                        <div class="closed-deals-ellipse"></div>
+                                        <div>Closed deals</div>
+                                    </div>
+                                    <div class="deals-graphic">
+                                        <img src="./images/deals_graphic.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tasks-chart-container">
+                            <div class="box">
+                                <div class="tasks-chart-content">
+                                    <div class="chart-header">
+                                        <h3 id="deals-title">Tasks</h3>
+                                        <p style="font-size: 12px; margin-left: auto; color: #6A707E;">Show: <a style="font-size: 12px;" class="active" href="#">This month</a></p>
+                                        <img style="padding-left: 5px;" src="./images/dropdown_logo_tasks.png" alt="">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="tasks-chart-graphic-container">
+                                    <div class="tasks-chart-image">
+                                        <img src="./images/tasks_chart_graphic.png" alt="">
+                                    </div>
+                                    <div class="chart-keys">
+                                        <div class="key">
+                                            <div class="key-ellipse active-key"></div>
+                                            <div>Active</div>
+                                        </div>
+                                        <div class="key">
+                                            <div class="key-ellipse completed-key"></div>
+                                            <div>Completed</div>
+                                        </div>
+                                        <div class="key">
+                                            <div class="key-ellipse ended-key"></div>
+                                            <div>Ended</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </div>
+
+            </div>
+            
+            
+        </div>
+    </div>
+
+</body>
+</html>

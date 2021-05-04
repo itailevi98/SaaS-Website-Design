@@ -1,0 +1,633 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    background: #ffffff;
+    margin: 0;
+    color: #334D6E;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+}
+
+a {
+    color: #334D6E;
+    text-decoration: none;
+}
+
+h3{
+    font-size: 15px;
+    margin: 0;
+}
+
+h4{
+    font-size: 13px;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid #EBEFF2;
+    width: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    display: none;
+    height: 100vh;
+    min-width: 256px;
+    /* white */
+    background: #FFFFFF;
+    /* sidebar shadow */
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand {
+    display: flex;
+    min-height: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* Accent blue */
+    color: #109CF1;
+}
+
+.brand {
+    margin-top: 17px;
+    margin-left: 24px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav {
+    width: 100%;
+
+    /* flex container */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 24px 20px 24px;
+}
+
+.nav-item img {
+    margin-right: 16.5px;
+}
+
+.nav-link {
+    font-size: 13px;
+}
+
+.nav-link img {
+    margin-right: 16.5px;
+}
+
+#nav-hr {
+    margin-top: 2px;
+    margin-bottom: 24px;
+}
+
+.toggle-sidebar {
+    margin-top: auto;
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+    margin: auto 24px 22px 24px;
+}
+
+.toggle-text {
+    font-size: 11px;
+    color: #90A0B7;
+    margin-left: 14px;
+}
+
+.profile {
+    height: 46px;
+    margin: 24px 24px 40px 24px;
+    /* flex container */
+    display: flex;
+}
+
+.right-profile {
+    padding-left: 10px;
+    /* flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#email {
+    font-size: 11px;
+    color: #C2CFE0;
+}
+
+#profile-picture {
+    width: 46px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+}
+
+.active {
+    color: #109CF1;
+}
+
+.right-child {
+    /* flex container */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.search-bar{
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    background: #FFFFFF;
+    /* flex container */
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding-left: 14.93px;
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    
+
+    /* gray */
+
+    color: #90A0B7;
+}
+
+.search-input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    /* gray */
+    color: #90A0B7;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+
+
+.tasks-container {
+    width: 100%;
+}
+
+.charts-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks-content {
+    padding: 16px 24px 0px 24px;
+}
+
+
+.progress{
+    /* flex container */
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.chart-header{
+    /* flex container */
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.progress-bar{
+    height: 4px;
+    margin: 16px 0 20px 0;
+    position: relative;
+}
+
+#progress-bar-green {
+    position: absolute;
+    background-color: #2ED47A;
+    width: 80%;
+    top: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 3px;
+}
+
+#progress-bar-full {
+    position: absolute;
+    background-color: #EBEFF2;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 3px;
+}
+
+.date {
+    margin-bottom: 15px;
+}
+
+.tasks-calendar {
+    display: none;
+    height: 46px;
+    margin-bottom: 24px;
+}
+
+.calendar-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.calendar-date-dow {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.calendar-selected-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #109CF1;
+    width: 24px;
+    height: 24px;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 50%;
+
+}
+
+.calendar-date-day {
+    font-weight: 400;
+    font-size: 12px;
+    color: #4C5862;
+}
+
+.calendar-date-day-current {
+    font-weight: 400;
+    font-size: 12px;
+    color: #109CF1;
+}
+
+.calendar-date-dow-current {
+    font-size: 13px;
+    font-weight: 500;
+    color: #109CF1;
+}
+
+.tasks-box-container {
+    margin: 24px 24px 14px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks-box {
+    /* white */
+    background: #FFFFFF;
+    /* card shadow */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+    border-radius: 4px;
+    max-height: 126px;
+    width: 100%;
+    cursor: pointer;
+
+    /* flex container */
+    display: flex;
+    flex-direction: column;
+}
+
+.last-box {
+    margin-bottom: 15px;
+}
+
+.show-more {
+    display: none;
+    font-weight: 600;
+    font-size: 13px;
+    color: #109CF1;
+    text-align: center;
+    
+}
+
+.tasks-box-title {
+    /* flex container */
+    display: flex;
+    margin: 16px 16px 7px 16px;
+    align-items: center;
+    height: 23px;
+}
+
+
+
+.tasks-box-due-date {
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+#due-date-label {
+    font-size: 13px; 
+    color: #4C5862; 
+    opacity: 0.5;
+}
+
+#due-date {
+    font-size: 13px; 
+    color: #4C5862;
+    opacity: 1;
+}
+
+.tasks-box-bottom-row {
+    /* flex container */
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.tasks-box-bottom-row img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin-right: 12px;
+}
+
+.tasks-box-bottom-row p {
+    font-size: 13px;
+    color: #707683;
+}
+
+.tasks-box-bottom-row-status {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.tasks-box-bottom-row-status-completed {
+    width: 84px;
+    height: 22px;
+    background: #2ED47A;
+    border-radius: 4px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 11px;
+    
+}
+
+.tasks-box-bottom-row-status-ended {
+    width: 84px;
+    height: 22px;
+    background: #F7685B;
+    border-radius: 4px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 11px;
+}
+
+.tasks-box-bottom-row-status img {
+    width: 16px;
+    height: 16px;
+    border-radius: 0%;
+    background: #ffffff;
+    margin-left: auto;
+}
+
+
+.deals-content {
+    margin: 16px 24px 16px 24px;
+}
+
+#deals-title {
+    display: none;
+}
+
+
+.deals-container hr {
+    border: 1px solid #EBEFF2;
+    width: 100%;
+}
+
+.closed-deals {
+    display: flex;
+    margin-bottom: 19px;
+    font-size: 10px;
+    align-items: center;
+    height: 16px;
+}
+
+.closed-deals-ellipse {
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    border: 2px solid #109CF1;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.deals-graphic {
+    max-width: 397px;
+    max-height: 222px;
+}
+
+.deals-graphic img{
+    width: 100%;
+    height: 100%;
+}
+
+.tasks-chart-content {
+    margin: 16px 24px 16px 24px;
+}
+
+.tasks-chart-container hr {
+    border: 1px solid #EBEFF2;
+    width: 100%;
+}
+
+.tasks-chart-graphic-container {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+
+.tasks-chart-image {
+    max-width: 224px;
+    max-height: 224px;
+}
+
+.tasks-chart-image img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.chart-keys{
+    font-size: 10px;
+    line-height: 15px;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.key {
+    display: flex;
+    padding-top: 12px;
+    align-items: center;
+}
+
+.key-ellipse {
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.active-key {
+    border: 2px solid #FFB946;
+}
+
+.completed-key {
+    border: 2px solid #2ED47A;
+}
+
+.ended-key {
+    border: 2px solid #F7685B;
+}
+
+
+
+
+/* on bigger screens */
+@media only screen and (min-width: 1000px) {
+    body{
+        background: #F5F6F8;
+    }
+    .sidebar {
+        /* flex container */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: row;
+        height: calc(100% - 60px);
+        
+    }
+      
+    .tasks-container{
+        margin: 36px 30px 36px 36px;
+        max-width: 55%;
+    }
+
+    .right-content {
+        flex-grow: 2;
+        height: 100%;
+    }
+
+    .charts-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 38px;
+    }
+      
+    .deals-container {
+        margin: 36px 0px 15px 0px;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    
+    .tasks-chart-container {
+        margin: 15px 0px 36px 0px;
+        height: 100%;
+        overflow-y: scroll;
+    }
+      
+
+    .tasks-chart-graphic-container {
+        flex-direction: row;
+        margin: 32px 48px 32px 48px;
+    }
+
+    .chart-keys {
+        margin-left: 48px;
+    }
+
+
+
+
+    .box {
+        background-color: white;
+        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .date {
+        margin-bottom: 46px;
+    }
+
+    .tasks-calendar {
+        display: flex;
+    }
+    
+
+    #deals-title {
+        display: block;
+        
+    }
+    .show-more {
+        display: block;
+    }
+
+    
+} 
